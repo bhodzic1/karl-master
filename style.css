@@ -16,10 +16,56 @@
         width: 150px;
     }
 
-    .bg-img {
+    .bg-img2 {
+        background-position: center center;
         background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .bg-img3 {
+        background-size: cover;
     }
 
     .product-img {
         background-size: contain;
+    }
+
+    .single_slide.height-300 {
+        height: 800px !important;
+    }
+
+    @media (max-width: 992px) {
+        .bg-img3 {
+            background-position: center right;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .single_slide.height-300 {
+            height: 650px !important;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .single_slide.height-300 {
+            height: 550px !important;
+        }
+        .bg-img {
+            background-size: cover;
+            background-position: center center;
+            height: 570px;
+        }
+
+        
+    }
+
+    @media (max-width: 540px) {
+        .single_slide.height-300 {
+            height: 450px !important;
+        }
+        .bg-img {
+            background-size: cover;
+            background-position: center center;
+            height: 410px;
+        }
     }
