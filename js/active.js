@@ -1,3 +1,4 @@
+const products = require('./products');
 (function ($) {
     'use strict';
 
@@ -208,3 +209,15 @@
     }
 
 })(jQuery);
+
+function showModal(data) {
+    //you can do anything with data, or pass more data to this function. i set this data to modal header for example
+    /*const product = []
+    products().then(p => {
+        product = p
+    });*/
+    
+    console.log(products.array)
+    $("#quickview #description").html(data)
+    $("#quickview").modal();
+}
